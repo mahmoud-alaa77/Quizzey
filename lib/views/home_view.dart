@@ -4,7 +4,6 @@ import 'package:untitled2/cubits/login_cubit/login_cubit.dart';
 import 'package:untitled2/widgets/custom_widget/custom_app_bar.dart';
 
 import '../widgets/categories_list_view.dart';
-import '../widgets/score_board_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key, required this.userName});
@@ -12,7 +11,6 @@ final String userName;
   @override
   Widget build(BuildContext context) {
      var widthScreen=MediaQuery.of(context).size.width;
-    // var heightScreen=MediaQuery.of(context).size.height;
     return  SafeArea(
       child: Scaffold(
         body: Padding(

@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../constants.dart';
 import '../../cubits/question_cubit/question_cubit.dart';
-import '../../helper.dart';
 
 class CustomAlertDialog extends StatelessWidget {
   const CustomAlertDialog({super.key});
@@ -27,7 +26,6 @@ class CustomAlertDialog extends StatelessWidget {
 
         TextButton(
           onPressed: () async{
-            BlocProvider.of<QuestionCubit>(context).saveLastScore(BlocProvider.of<QuestionCubit>(context).score );
             Navigator.pop(context);
             Navigator.pop(context);
 

@@ -40,7 +40,7 @@ setState(() {
             child: CircleAvatar(
               radius: widthScreen/15,
 
-              backgroundColor: Colors.white,
+              backgroundColor: kPrimaryColor,
 child: Center(
     child: Image.asset("assets/images/person${index+1}.png",
 width: widthScreen/12,

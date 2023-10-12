@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled2/models/question_model.dart';
 import 'package:untitled2/services/question_service.dart';
 
@@ -44,16 +43,6 @@ showColorOfQuestion({required String diff}){
   }
 
 
- Future<void> saveLastScore(int score) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt("last", score);
-  }
 
-
- Future<int> getScore() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    int? num = prefs.getInt('last') ?? 0;
-    return num;
-  }
 
 }

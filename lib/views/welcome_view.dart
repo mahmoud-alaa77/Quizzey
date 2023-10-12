@@ -20,10 +20,26 @@ class _WelcomeViewState extends State<WelcomeView> {
     var widthScreen=MediaQuery.of(context).size.width;
     var heightScreen=MediaQuery.of(context).size.height;
     return Scaffold(
-      // appBar: AppBar(
-      //   centerTitle: true,
-      //   title: const Text("Quizey app"),
-      // ),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Quizzey",
+            style: TextStyle(
+                fontWeight: FontWeight.bold
+
+            ),
+            ),
+            Text(" app",
+              style: TextStyle(
+                color: kPrimaryColor,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -31,7 +47,7 @@ class _WelcomeViewState extends State<WelcomeView> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("assets/images/quiz.png",
+                Image.asset("assets/images/question-mark.png",
                   height: heightScreen/3,
                  //width: widthScreen/1.5,
                 ),
@@ -39,9 +55,8 @@ class _WelcomeViewState extends State<WelcomeView> {
                   padding: const EdgeInsets.symmetric(vertical: 24,horizontal: 16),
                   child: TextField(
                     style:  TextStyle(
-                      fontSize: widthScreen/16,
-                     height: 1.75,
-                      fontWeight: FontWeight.w500
+                      fontSize: widthScreen/20,
+                     height: 1.5,
                     ),
                     controller: myController,
 
