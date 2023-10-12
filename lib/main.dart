@@ -7,7 +7,7 @@ import 'package:untitled2/services/question_service.dart';
 import 'package:untitled2/views/welcome_view.dart';
 
 void main() {
-  runApp(DevicePreview(builder: (context) => const MyApp(),));
+  runApp(const MyApp());
 
 }
 
