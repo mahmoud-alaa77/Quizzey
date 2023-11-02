@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled2/constants.dart';
 import 'package:untitled2/cubits/question_cubit/question_cubit.dart';
+import 'package:untitled2/widgets/custom_widget/custom_check_connection_widget.dart';
 import 'list_of_questions_view.dart';
 
 class DisplayQuestionsView extends StatelessWidget {
@@ -20,9 +21,7 @@ return const Center(
   ),
 );
     }else if(state is QuestionFailure){
-      return const Center(
-        child: Text("Check your network connection"),
-      );
+      return const CheckConnection();
     }else{
       return const ListOfQuestions();
     }
