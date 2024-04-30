@@ -1,6 +1,10 @@
-# untitled2
+Quizzy App 📱
 
-A new Flutter project.
+
+
+
+![Quiz_app](https://github.com/mahmoud-alaa77/Quizzey/assets/126196219/9c68c5d5-0077-4a4a-84dc-e1bb1277ad21)
+
 
 ## Getting Started
 
